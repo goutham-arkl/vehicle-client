@@ -1,6 +1,6 @@
 import React, { useEffect, useContext, useState, useRef } from "react";
 import { gsap } from "gsap";
-import Swal from "sweetalert2";
+import Swal from 'sweetalert2'
 import { DataContext } from "../../Context/DataContext";
 import axios from "../../axios";
 import "./Home.css";
@@ -313,7 +313,7 @@ const Home = () => {
                     <label>Scenario List</label>
                     <select
                       className="scenario-select"
-                      onChange={(e) => {
+                      onChange={(e) =>{
                         setCurrentScenario(e.target.value);
                         setChanged(true);
                       }}
