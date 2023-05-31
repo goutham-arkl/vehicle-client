@@ -302,10 +302,12 @@ useEffect(() => {
 
       <div className='input-container'>
       <label>Scenario List</label>
-      <select className='scenario-select' onChange={(e) => {
+      <select className='scenario-select'
+       onChange={(e) => {
         setCurrentScenario(e.target.value);
         setChanged(true);
-      }}>
+      }}
+      >
         {scenario && scenario.map((item) => (
           <option key={item.id} value={item.id}>{item.name}</option>
         ))}
@@ -314,38 +316,65 @@ useEffect(() => {
 
     <div className='input-container'>
       <label>Vehicle Name</label>
-      <input onChange={(e)=>{
-        setName(e.target.value),setChanged(true)}} 
-        value={name}  type={'text'} placeholder='name'/>
+      <input 
+      onChange={(e)=>{
+        setName(e.target.value)
+        setChanged(true)
+      }} 
+        value={name}  
+        type={'text'} 
+        placeholder='name'
+        />
       </div>
 
       <div className='input-container'>
       <label>Speed</label>
-      <input onChange={(e)=>{
-        setSpeed(e.target.value),setChanged(true)}}
-         value={speed} type={'number'} placeholder='10'/>
+      <input 
+      onChange={(e)=>{
+        setSpeed(e.target.value)
+        setChanged(true)
+      }}
+         value={speed} 
+         type={'number'}
+         placeholder='10'
+         />
       </div>
 
       <div className='input-container'>
       <label>Position X</label>
-      <input onChange={(e)=>{
-        setX(e.target.value),setChanged(true)}}
-         value={x} type={'number'} placeholder='10'/>
+      <input 
+      onChange={(e)=>{
+        setX(e.target.value)
+        setChanged(true)
+      }}
+         value={x} 
+         type={'number'} 
+         placeholder='10'
+         />
       </div>
 
       <div className='input-container'>
       <label>Position Y</label>
-      <input onChange={(e)=>{
-        setY(e.target.value),setChanged(true)}} 
-        value={y} type={'number'} placeholder='10'/>
+      <input 
+        onChange={(e)=>{
+        setY(e.target.value)
+        setChanged(true)}} 
+        value={y} 
+        type={'number'} 
+        placeholder='10'
+        />
       </div>
     
 
       <div className='input-container'>
       <label>Direction</label>
-      <select onChange={(e)=>{
-        setDirection(e.target.value),setChanged(true)}}
-         className='scenario-select'>
+      <select 
+      className='scenario-select'
+      onChange={(e)=>{
+        setDirection(e.target.value)
+        setChanged(true)
+      }}
+      >
        <option selected>{direction}</option>
        <option>upwards</option>
        <option>downwards</option>

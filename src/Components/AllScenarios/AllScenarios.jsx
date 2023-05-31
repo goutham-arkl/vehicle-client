@@ -267,18 +267,30 @@ const AllScenarios = () => {
       {modalData && <div className='values-div'>
 
 
-    <div className='input-container'>
+      <div className='input-container'>
       <label>Scenario Name</label>
-      <input onChange={(e)=>{
-        setName(e.target.value),setChanged(true)}}
-         value={name}  type={'text'} placeholder='Name'/>
-      </div>
+      <input
+        onChange={(e) => {
+          setName(e.target.value);
+          setChanged(true);
+        }}
+        value={name}
+        type={'text'}
+        placeholder='Name'
+      />
+    </div>
+    
 
       <div className='input-container'>
       <label>Time</label>
-      <input onChange={(e)=>{
-        setTime(e.target.value),setChanged(true)}} 
-        value={time} type={'number'} placeholder='10'/>
+      <input 
+      onChange={(e)=>{
+        setTime(e.target.value),setChanged(true)
+      }} 
+        value={time} 
+        type={'number'} 
+        placeholder='10'
+        />
       </div>
 
       
