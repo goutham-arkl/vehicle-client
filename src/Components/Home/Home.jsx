@@ -138,7 +138,6 @@ const Home = () => {
               time:res.data.time,
               vehicles:vehicles
             }
-            console.log(obj)
              return axios.patch(`/scenario/${currentScenario}`,obj)
 
           })
