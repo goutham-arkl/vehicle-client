@@ -1,0 +1,10 @@
+.add-vehicle-container{
+    width: 100%;
+    color: white;
+}
+.scenario-select{
+    min-width:400px ;
+}
+.err{
+    color: rgb(193, 54, 54);
+}
